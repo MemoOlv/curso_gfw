@@ -59,8 +59,8 @@ setup: clean install
 install:
 	R -e "devtools::document()" && \
     R CMD build . && \
-    R CMD check rpackage.template_0.1.0.tar.gz && \
-    R CMD INSTALL rpackage.template_0.1.0.tar.gz
+    R CMD check gfw.notes_0.1.0.tar.gz && \
+    R CMD INSTALL gfw.notes_0.1.0.tar.gz
 
 install_dependencies:
 	R -e "devtools::install()" && \

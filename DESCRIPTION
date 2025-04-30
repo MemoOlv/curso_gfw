@@ -1,4 +1,4 @@
-Package: rpackage.template
+Package: gfw.notes
 Title: Template for R package
 Authors@R: c(
     person(given = "Guillermo Olvera",
@@ -6,7 +6,7 @@ Authors@R: c(
            email = "guolgue@gmail.com"
            ))
 Config/testthat/edition: 3
-Description: Plantilla para paquetes en R
+Description: Notas para el curso de GFW
 Encoding: UTF-8
 Imports:
     R6,

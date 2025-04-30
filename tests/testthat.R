@@ -1,3 +1,3 @@
 library(testthat)
-library(rpackage.template)
-test_check("rpackage.template")
+library(gfw.notes)
+test_check("gfw.notes")
