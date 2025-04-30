@@ -16,3 +16,9 @@ jobs:
       run: docker run memoolv/gfw.notes make tests
     - name: Generate trip results
       run: docker run --volume $PWD:/workdir --env GFW_TOKEN=$GFW_TOKEN memoolv/gfw.notes make results
+    - name: Upload results
+      uses: actions/upload-artifact@main
+      with:
+        name: results
+        path: |
+          *.png
