@@ -72,4 +72,4 @@ tests:
 	Rscript -e "devtools::test(stop_on_failure = TRUE)"
 
 results:
-	Rscript -e "scripts/get_raster.R"
+	Rscript scripts/get_raster.R
