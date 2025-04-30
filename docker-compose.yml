@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: memoolv/rpackage_template:latest
+    image: memoolv/curso_gfw:latest
     command: bash
     volumes:
       - $PWD:/workdir
