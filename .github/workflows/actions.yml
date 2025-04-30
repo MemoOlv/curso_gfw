@@ -16,9 +16,3 @@ jobs:
       run: docker run memoolv/gfw.notes make tests
     - name: Generate trip results
       run: docker run --volume $PWD:/workdir --env GFW_TOKEN=$GFW_TOKEN memoolv/gfw.notes make results
-    - name: Create/Update tag
-      uses: rickstaa/action-create-tag@v1.5.4
-      with:
-        tag: "latest"
-        message: "Latest release"
-        force_push_tag: true
