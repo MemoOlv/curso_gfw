@@ -70,3 +70,6 @@ install_dependencies:
 
 tests:
 	Rscript -e "devtools::test(stop_on_failure = TRUE)"
+
+results:
+    Rscript -e "src/get_raster.R"
