@@ -5,5 +5,7 @@ services:
       dockerfile: Dockerfile
     image: memoolv/curso_gfw:latest
     command: bash
+    environment:
+      GFW_TOKEN: $GFW_TOKEN
     volumes:
       - $PWD:/workdir
