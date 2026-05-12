@@ -1,5 +1,5 @@
 
-info_vessel <- gfwr::get_vessel_info(
+info_vessel <- gfwr::gfw_vessel_info(
     query = 431782000,
     search_type = "search",
     key = gfwr::gfw_auth())

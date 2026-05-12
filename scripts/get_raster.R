@@ -1,6 +1,6 @@
 
-mexico_region <- gfwr::get_region_id(
-    region_name = "Mexico",
+mexico_region <- gfwr::gfw_region_id(
+    region = "Mexico",
     region_source = "EEZ"
 )
 
@@ -9,7 +9,7 @@ mexico_id <- mexico_region[["id"]]
 start_date <- "2023-01-01"
 end_date <- "2023-04-01"
 
-mexico_fisheff <- gfwr::get_raster(
+mexico_fisheff <- gfwr::gfw_ais_fishing_hours(
     spatial_resolution = "LOW",
     temporal_resolution = "MONTHLY",
     start_date = start_date,
@@ -42,7 +42,7 @@ mexico_fisheff |>
 dev.off()
 
 
-US_in_MEX <- gfwr::get_raster(
+US_in_MEX <- gfwr::gfw_ais_fishing_hours(
     spatial_resolution = "LOW",
     temporal_resolution = "MONTHLY",
     start_date = start_date,
